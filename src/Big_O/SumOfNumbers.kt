@@ -11,17 +11,7 @@ private fun sum(n: Int): Int {
 }
 
 // (0 + 1) + (1 + 2) + (2 + 3) + (3 + 4) + ... ((n - 1) + n)
-private fun pairSumSequence(n: Int): Int {
-    var sum = 0
 
-    // iterate one less than n
-    // because in last iteration we need next number ( i + 1 == n).
-    for (i in 0..<n) {
-        sum += i + (i + 1)
-    }
-
-    return sum
-}
 
 /**
  * O(2^N) ,  Space O(N)
